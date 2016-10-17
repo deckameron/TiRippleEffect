@@ -1,4 +1,4 @@
-RippleEffect = function(e) {
+exports.RippleEffect = function(e) {
 
 	var OS_IOS = Titanium.Platform.osname != 'android';
 	var _x = (OS_IOS || e.dp) ? e.x : (e.x / Ti.Platform.displayCaps.logicalDensityFactor);
