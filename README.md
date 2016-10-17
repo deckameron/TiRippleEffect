@@ -6,6 +6,8 @@ Titanium Ripple Effect for view click events
 ## How to use it
 
 ```javascript
+var ripple = require('/RippleEffect.js');
+
 var view = Titanium.UI.createView({
 	top : 1,
 	height : 180,
@@ -15,6 +17,6 @@ var view = Titanium.UI.createView({
 });
 
 view.addEventListener('click', function(e){
-	RippleEffect(e);
+	ripple.effect(e);
 });
 ```
